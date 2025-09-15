@@ -32,7 +32,7 @@ jobs:
       - name: Output information
         run: |
           echo "MOGODB_USERNAME is ${{ env.MONGODB_USERNAME }}"
-          echo "MOGODB_NAME is $MONGO_DB_NAME"
+          echo "MOGODB_NAME is $MONGODB_DB_NAME"
   deploy:
     needs: test
     runs-on: ubuntu-latest
